@@ -1,5 +1,7 @@
-# Heuristic
-Number of white tiles to the right of at least one black tile. For example w/b/w/0/w/b/b has the heuristic value 2, and w/w/w/0/b/b/b has the heuristic value 0. This heuristic gives a good idea about how close we are to the goal state. 
-This is an admissible heuristic. For any state S, the heuristic value h(S) ≤ h * (S), where h * is the actual cost of an optimal path from the start node to the goal node that passes through node S. This is because the number of white tiles to the right of atleast one black tile gives a tight lower bound to the number of moves required to reach the goal state. Thus the heuristic never overestimates the cost to reach the goal state and remains admissible. 
-The heuristic is monotonic. For any two adjacent configurations in the state space Si and Sj, where Sj is a descendant of Si, h(Si)-h(Sj) ≤ cost(Si,Sj). This is because for any two adjacent configurations, the number of white tiles to the right of atleast one black tile decreases maximum by 1. Since the cost of every move is 1, the difference in heuristic values of adjacent configurations satisfy the property of monotonicity.
-Value of the heuristic lies between 0 and 3. Thus, this heuristic is better informed than simpler heuristics like number of tiles out of place. This is not the best informed heuristic. There are better heuristics, but which are expensive to compute.
+##Introduction
+The sliding-tile puzzle consists of three black tiles, three white tiles, and an empty space in the configuration. The puzzle has two legal moves with associated costs:
+
+1. A tile may' move into an adjacent empty location. 
+2. A tile can hop over one or two other tiles into the empty' position. 
+
+The goal is to have all the white tiles to the left of all the black tiles. The position of the blank is not important. All moves have exactly the same cost (= 1).

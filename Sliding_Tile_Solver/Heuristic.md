@@ -18,15 +18,15 @@ Breadth first search, with a branching factor of B = 3.28 and a solution path of
 <\br>
 ?-solve(b/b/b/0/w/w/w).
 
-1. hop right one
-2. hop left two
-3. hop left one
-4. hop right two
-5. hop right two
-6. move left
-7. hop left two
-8. hop right one
-9. hop left two
+1. hop_right_one
+2. hop_left_two
+3. hop_left_one
+4. hop_right_two
+5. hop_right_two
+6. move_left
+7. hop_left_two
+8. hop_right_one
+9. hop_left_two
 
 true.
 
@@ -48,13 +48,13 @@ The worst case input is solved in 9 steps. With an average branching factor of 4
  
 ?- solve(b/w/b/0/w/b/w).
 
-1. hop right two
-2. move left
-3. hop left two
-4. hop left one
-5. move right
-6. hop right two
-7. hop left one
+1. hop_right_two
+2. move_left
+3. hop_left_two
+4. hop_left_one
+5. move_right
+6. hop_right_two
+7. hop_left_one
  
 true.
 

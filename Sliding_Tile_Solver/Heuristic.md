@@ -15,7 +15,7 @@ As per the discussions in [[1]](http://www.cs.trincoll.edu/~ram/cpsc352/hmk/heur
 Breadth first search, with a branching factor of B = 3.28 and a solution path of length 10, will require that T = B<sup>1</sup> + B<sup>2</sup> + B<sup>3</sup> + ... + B<sup>10</sup> states be examined, which is more that 2,00,000 states.
 
 ## Experimental run
-<\br>
+
 ?-solve(b/b/b/0/w/w/w).
 
 1. hop_right_one
